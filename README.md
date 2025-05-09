@@ -7,7 +7,9 @@ This is due to the 320x172 resolution display.
 
 Ok so basically follow this guide:  https://www.instructables.com/Train-Scene-Decoration/
 
-**Note: The guide mentions the miniTV repo, which works but is missin one crucial dependancy**
+This should set you up with the code that can be flashed to onto the board and be ready to accept videos from the SD card.
+
+**Note: The guide mentions the miniTV repo, which works but is missing one crucial dependancy**
 
 ```
 #include "PINS_ESP32-C6-LCD-1_47.h"
@@ -38,3 +40,5 @@ Also the normalize folder will contain all your videos that will then be combine
 ./format <dir>
 ```
 Use the directory that you want to convert your videos from, mostly the normalize folder. (the dir bit will probably be removed in the future)
+
+After this, the output.mjpeg can be found in the output directory and copied over to the SD card.
